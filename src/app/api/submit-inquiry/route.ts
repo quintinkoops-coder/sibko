@@ -11,11 +11,12 @@ export async function POST(request: Request) {
     const specifications = formData.get('specifications');
     const budget = formData.get('budget');
 
-    // Access your D1 database connection directly from Cloudflare environment global variables
-    const db = (process.env as any).DB;
+    // Access your D1 database connection directly from Cloudflare's global environment
+    const db = (globalThis as any).__cloudflare_env__?.DB || (process.env as any).DB;
 
+    // Check if the binding failed to prevent a crash, returning a clear JSON message instead
     if (!db) {
-      return NextResponse.json({ error: 'Database context binding DB not found' }, { status: 500 });
+      return NextResponse.json({ error: 'Database binding DB not found' }, { status: 500 });
     }
 
     // Safely insert data rows straight into your D1 inquiries table
