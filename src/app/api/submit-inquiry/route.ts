@@ -9,13 +9,13 @@ export async function POST(request: Request) {
 
     // 1. Safely handle both JSON and Form Data submissions
     if (contentType.includes('application/json')) {
-      const body = await request.json();
+      const body = await request.json() as any; // Cast as 'any' to fix the TypeScript unknown error
       data = {
-        name: body.name || '',
-        email: body.email || '',
-        division: body.division || '',
-        specifications: body.specifications || '',
-        budget: body.budget || ''
+        name: body?.name || '',
+        email: body?.email || '',
+        division: body?.division || '',
+        specifications: body?.specifications || '',
+        budget: body?.budget || ''
       };
     } else {
       const formData = await request.formData();
