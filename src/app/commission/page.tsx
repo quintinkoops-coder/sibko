@@ -30,10 +30,8 @@ export default async function CommissionPage() {
       .bind(name, email, division, specifications, budget)
       .run();
 
-      return { success: true };
     } catch (error) {
       console.error('D1 Database Insertion Error:', error);
-      return { success: false };
     }
   }
 
