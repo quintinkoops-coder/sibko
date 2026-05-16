@@ -56,7 +56,6 @@ export default function Home() {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {/* Division 1 - Premium Recreation */}
             <div className="bg-slate-900/30 border border-slate-900 rounded-xl p-6 hover:border-slate-800/80 transition-all group">
-              {/* Concept Image Container */}
               <div className="aspect-[16/10] w-full overflow-hidden bg-slate-950 relative rounded-lg border border-slate-900 mb-6">
                 <img 
                   src="/recreation-vehicle.jpg" 
@@ -69,10 +68,14 @@ export default function Home() {
               <span className="text-[10px] font-mono tracking-widest text-slate-500 uppercase block border-t border-slate-900 pt-4">CUSTOM MANUFACTURE & DESIGN</span>
             </div>
 
-            {/* Division 2 - Advanced Hydration */}
+            {/* Division 2 - Advanced Hydration Systems */}
             <div className="bg-slate-900/30 border border-slate-900 rounded-xl p-6 hover:border-slate-800/80 transition-all group">
-              <div className="aspect-[16/10] w-full overflow-hidden bg-slate-950 relative rounded-lg border border-slate-900 mb-6 flex items-center justify-center text-4xl">
-                💧
+              <div className="aspect-[16/10] w-full overflow-hidden bg-slate-950 relative rounded-lg border border-slate-900 mb-6">
+                <img 
+                  src="/hydration-bottle.jpg" 
+                  alt="Sibko Premium Hydration Thermal Hardware" 
+                  className="w-full h-full object-cover opacity-80 group-hover:opacity-100 group-hover:scale-102 transition-all duration-500" 
+                />
               </div>
               <h3 className="text-xl font-bold text-slate-200 mb-3 group-hover:text-amber-500 transition-colors">Advanced Hydration Systems</h3>
               <p className="text-sm text-slate-400 leading-relaxed font-light mb-6">Sculpting elite, high-performance thermal hardware. Incorporating ultra-pure grade metals, proprietary thermal vacuum barriers, and sleek lifestyle aesthetics for discerning consumer markets.</p>
@@ -81,7 +84,7 @@ export default function Home() {
 
             {/* Division 3 - Aged Care */}
             <div className="bg-slate-900/30 border border-slate-900 rounded-xl p-6 hover:border-slate-800/80 transition-all group">
-              <div className="aspect-[16/10] w-full overflow-hidden bg-slate-950 relative rounded-lg border border-slate-900 mb-6 flex items-center justify-center text-4xl">
+              <div className="aspect-[16/10] w-full overflow-hidden bg-slate-950 relative rounded-lg border border-slate-900 mb-6 flex items-center justify-center text-4xl bg-slate-950/40">
                 🏥
               </div>
               <h3 className="text-xl font-bold text-slate-200 mb-3 group-hover:text-amber-500 transition-colors">Aged Care & Assisted Living</h3>
