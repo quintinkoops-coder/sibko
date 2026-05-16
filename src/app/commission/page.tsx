@@ -3,38 +3,6 @@ import React from 'react';
 export const runtime = 'edge';
 
 export default async function CommissionPage() {
-  
-  // This executes securely on Cloudflare's edge network when the user clicks submit
-  async function submitInquiry(formData: FormData) {
-    'use server';
-    
-    const name = formData.get('name');
-    const email = formData.get('email');
-    const division = formData.get('division');
-    const specifications = formData.get('specifications');
-    const budget = formData.get('budget');
-
-    try {
-      // Access your database connection directly from the global environment context
-      const db = (process.env as any).DB;
-
-      if (!db) {
-        throw new Error("Database binding 'DB' not detected in process.env");
-      }
-
-      // Safely insert rows into your Cloudflare D1 table
-      await db.prepare(
-        `INSERT INTO inquiries (name, email, division, specifications, budget) 
-         VALUES (?, ?, ?, ?, ?)`
-      )
-      .bind(name, email, division, specifications, budget)
-      .run();
-
-    } catch (error) {
-      console.error('D1 Database Insertion Error:', error);
-    }
-  }
-
   return (
     <div className="min-h-screen bg-slate-950 text-slate-100 flex flex-col justify-center items-center px-6 py-12">
       <div className="w-full max-w-2xl bg-slate-900 border border-slate-800 rounded-xl p-8 md:p-12 shadow-2xl">
@@ -47,7 +15,8 @@ export default async function CommissionPage() {
           </p>
         </div>
 
-        <form action={submitInquiry} className="space-y-6">
+        {/* Submitting securely to our custom API route via POST */}
+        <form action="/api/submit-inquiry" method="POST" className="space-y-6">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             <div>
               <label className="block text-xs font-semibold uppercase tracking-wider text-slate-400 mb-2">Full Name / Entity</label>
