@@ -3,43 +3,39 @@ export default function Home() {
     <div className="min-h-screen bg-slate-950 text-slate-100 font-sans selection:bg-amber-500/30 selection:text-amber-200">
       
       {/* Header / Navigation */}
-      <header className="border-b border-slate-900 bg-slate-950/80 backdrop-blur sticky top-0 z-50">
-        <div className="max-w-6xl mx-auto px-6 h-20 flex justify-between items-center">
-          <img 
-            src="/logo.svg" 
-            alt="Sibko Limited Logo" 
-            className="h-14 w-auto object-contain" 
-          />
-          <nav className="hidden sm:flex space-x-8 text-xs tracking-widest uppercase font-semibold text-slate-400">
-            <a href="#divisions" className="hover:text-amber-500 transition-colors">Divisions</a>
-            <a href="#capabilities" className="hover:text-amber-500 transition-colors">Capabilities</a>
-            <a href="#contact" className="hover:text-amber-500 transition-colors font-bold text-amber-500/90">Contact Corporate</a>
-          </nav>
-        </div>
-      </header>
+    <header className="border-b border-slate-900 bg-slate-950/80 backdrop-blur sticky top-0 z-50">
+      <div className="max-w-6xl mx-auto px-6 h-20 flex justify-between items-center">
+        <img 
+          src="/logo.svg" 
+          alt="Sibko Limited Logo" 
+          className="h-14 w-auto object-contain" 
+        />
+        <nav className="hidden sm:flex space-x-8 text-xs tracking-widest uppercase font-semibold text-slate-400">
+          <a href="#divisions" className="hover:text-amber-500 transition-colors">Divisions</a>
+          <a href="#capabilities" className="hover:text-amber-500 transition-colors">Capabilities</a>
+          <a href="/commission" className="hover:text-amber-500 transition-colors font-bold text-amber-500/90">Contact Corporate</a>
+        </nav>
+      </div>
+    </header>
 
-      {/* Hero / Corporate Mandate */}
-      <section className="relative overflow-hidden bg-gradient-to-b from-slate-900 to-slate-950 py-24 sm:py-32">
-        <div className="max-w-6xl mx-auto px-6 text-center relative z-10">
-          <span className="px-4 py-1 text-[11px] uppercase tracking-[0.2em] font-bold bg-amber-500/10 text-amber-400 rounded-full border border-amber-500/20">
-            Precision Engineering & Industrial Design
-          </span>
-          <h1 className="text-4xl font-light tracking-tight mt-8 sm:text-6xl text-slate-100">
-            Designing the Future of <br />
-            <span className="font-semibold bg-gradient-to-r from-amber-400 via-orange-400 to-amber-500 bg-clip-text text-transparent">
-              Premium Consumer Products
-            </span>
-          </h1>
-          <p className="mt-6 text-lg text-slate-400 max-w-3xl mx-auto font-light leading-relaxed">
-            Sibko Limited is an elite product development and manufacturing umbrella company. We engineer ultra-premium consumer assets, combining advanced ergonomics with world-class production integrity.
-          </p>
-          <div className="mt-10 flex justify-center gap-4">
-            <a href="#divisions" className="px-6 py-3 bg-amber-600 hover:bg-amber-500 text-slate-950 text-xs tracking-widest uppercase font-bold rounded transition-all duration-200 shadow-lg shadow-amber-600/10">
-              Explore Enterprise Portfolio
-            </a>
-          </div>
+    {/* Hero / Corporate Mandate */}
+    <section className="relative overflow-hidden bg-gradient-to-b from-slate-900 to-slate-950 py-24 sm:py-32">
+      <div className="max-w-6xl mx-auto px-6 text-center relative z-10" >
+        <span className="px-4 py-1 text-[11px] uppercase tracking-[0.2em] font-bold bg-amber-500/10 text-amber-400 rounded-full border border-amber-500/20">Precision Engineering & Industrial Design</span>
+        <h1 className="text-4xl font-light tracking-tight mt-8 sm:text-6xl text-slate-100">Designing the Future of <br /><span className="font-semibold bg-gradient-to-r from-amber-400 via-orange-400 to-amber-500 bg-clip-text text-transparent">Premium Consumer Products</span></h1>
+        <p className="mt-6 text-lg text-slate-400 max-w-3xl mx-auto font-light leading-relaxed">Sibko Limited is an elite product development and manufacturing umbrella company. We engineer ultra-premium consumer assets, combining advanced ergonomics with world-class production integrity.</p>
+        
+        {/* New Navigation Action Buttons */}
+        <div className="mt-10 flex justify-center gap-4">
+          <a href="#divisions" className="px-6 py-3 bg-slate-900 hover:bg-slate-800 text-slate-200 text-xs tracking-widest uppercase font-bold rounded transition-all duration-200 border border-slate-800">
+            Explore Portfolio
+          </a>
+          <a href="/commission" className="px-6 py-3 bg-amber-600 hover:bg-amber-500 text-slate-950 text-xs tracking-widest uppercase font-bold rounded transition-all duration-200 shadow-lg shadow-amber-600/10">
+            Submit Commission Inquiry
+          </a>
         </div>
-      </section>
+      </div>
+    </section>
 
       {/* Core Divisions Grid */}
       <section id="divisions" className="py-24 max-w-6xl mx-auto px-6">
