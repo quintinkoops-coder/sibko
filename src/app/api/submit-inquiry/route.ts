@@ -7,7 +7,7 @@ export async function POST(request: Request) {
     const contentType = request.headers.get('content-type') || '';
     let data: Record<string, string> = {};
 
-    // 1. Safely handle both JSON and Form Data submissions without crashing
+    // 1. Safely handle both JSON and Form Data submissions
     if (contentType.includes('application/json')) {
       const body = await request.json();
       data = {
@@ -31,10 +31,9 @@ export async function POST(request: Request) {
     // 2. Locate the Database Binding safely
     const db = (globalThis as any).__cloudflare_env__?.DB || (process.env as any).DB;
 
-    // Stop and report explicitly if the database binding is completely missing
     if (!db) {
       return NextResponse.json(
-        { error: 'CRITICAL: Database binding "DB" was not found in the edge environment.' },
+        { error: 'CRITICAL: Database binding "DB" was not found.' },
         { status: 500 }
       );
     }
@@ -49,13 +48,12 @@ export async function POST(request: Request) {
     // 4. Success Redirect
     return NextResponse.redirect(new URL('/', request.url), 303);
     
-  } catch (error: any) {
+  } catch (error) {
     console.error('Submission Error:', error);
-    // Expose the ACTUAL error on the screen so we know exactly what failed
     return NextResponse.json(
       { 
         error: 'Backend Processing Error', 
-        details: error?.message || 'Unknown error occurred during submission' 
+        details: error instanceof Error ? error.message : 'Unknown error occurred' 
       }, 
       { status: 500 }
     );
