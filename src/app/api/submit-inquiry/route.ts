@@ -5,19 +5,19 @@ export const runtime = 'edge';
 export async function POST(request: Request) {
   try {
     const formData = await request.formData();
-    const name = formData.get('name');
-    const email = formData.get('email');
-    const division = formData.get('division');
-    const specifications = formData.get('specifications');
-    const budget = formData.get('budget');
+    const name = formData.get('name')?.toString() || '';
+    const email = formData.get('email')?.toString() || '';
+    const division = formData.get('division')?.toString() || '';
+    const specifications = formData.get('specifications')?.toString() || '';
+    const budget = formData.get('budget')?.toString() || '';
 
     // Access your D1 database connection directly from Cloudflare's global environment
     const db = (globalThis as any).__cloudflare_env__?.DB || (process.env as any).DB;
 
     // Check if the binding failed to prevent a crash, returning a clear JSON message instead
-    if (!db) {
-      return NextResponse.json({ error: 'Database binding DB not found' }, { status: 500 });
-    }
+    //if (!db) {
+    //  return NextResponse.json({ error: 'Database binding DB not found' }, { status: 500 });
+    //}
 
     // Safely insert data rows straight into your D1 inquiries table
     await db.prepare(
