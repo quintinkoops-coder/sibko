@@ -123,11 +123,55 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Footer & Contact Target Anchor */}
-      <footer id="contact" className="border-t border-slate-900 bg-slate-950 py-12 text-center text-xs text-slate-500">
-        <p className="tracking-wide">SIBKO LIMITED — Corporate Headquarters Contact: info@sibko.com</p>
-        <p className="mt-2 text-slate-600">&copy; {new Date().getFullYear()} Sibko Limited. All rights reserved.</p>
-      </footer>
-    </div>
-  );
-}
+        {/* Industrial Heritage Portfolio Section */}
+        <section className="bg-slate-950 text-slate-100 py-24 px-6 border-t border-slate-900">
+          <div className="max-w-6xl mx-auto">
+            <div className="border-l-2 border-amber-500 pl-4 mb-16">
+              <span className="text-xs uppercase tracking-widest text-slate-500 font-bold block">Industrial Heritage</span>
+              <h2 className="text-3xl font-bold tracking-tight text-slate-100 mt-1">Proven Execution Realities</h2>
+              <p className="text-slate-400 mt-4 max-w-2xl text-sm font-light leading-relaxed">
+                Before launching our specialized consumer lines, our foundational mastery was forged in heavy machinery, handheld mechanics, and complex physical installations. We bring this high-integrity industrial discipline to every division.
+              </p>
+            </div>
+
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+              {/* Card 1 */}
+              <div className="group p-8 bg-slate-900/40 border border-slate-900 rounded-xl hover:border-slate-800 transition-all duration-300 flex flex-col justify-between">
+                <div>
+                  <div className="aspect-video w-full overflow-hidden bg-slate-950 relative rounded-lg border border-slate-800/80 mb-6">
+                    <img src="/handheld-project.jpg" alt="Handheld Mechanics" className="w-full h-full object-cover opacity-60 grayscale group-hover:grayscale-0 group-hover:opacity-100 transition-all duration-500" />
+                  </div>
+                  <h3 className="text-xl font-bold text-slate-100 mb-3">Tactile Form & Handheld Mechanics</h3>
+                  <p className="text-sm text-slate-400 leading-relaxed font-light">Applying over a decade of handheld industrial tool engineering to consumer hardware. Specializing in weight distribution, structural drop-resistance, and intuitive grip architecture.</p>
+                </div>
+                <span className="text-[10px] tracking-wider text-amber-500/70 uppercase font-semibold mt-8 block">Core Expertise ➔ Hydration & Mobility</span>
+              </div>
+
+              {/* Card 2 */}
+              <div className="group p-8 bg-slate-900/40 border border-slate-900 rounded-xl hover:border-slate-800 transition-all duration-300 flex flex-col justify-between">
+                <div>
+                  <div className="aspect-video w-full overflow-hidden bg-slate-950 relative rounded-lg border border-slate-800/80 mb-6">
+                    <img src="/rebuild-project.jpg" alt="Machine Rebuilds" className="w-full h-full object-cover opacity-60 grayscale group-hover:grayscale-0 group-hover:opacity-100 transition-all duration-500" />
+                  </div>
+                  <h3 className="text-xl font-bold text-slate-100 mb-3">High-Tolerance Powertrain Rebuilds</h3>
+                  <p className="text-sm text-slate-400 leading-relaxed font-light">Translating heavy industrial machinery teardowns and rebuilds into recreation asset development. Ensuring our motorized vehicles utilize flawless bearing tolerances and hardened gears.</p>
+                </div>
+                <span className="text-[10px] tracking-wider text-amber-500/70 uppercase font-semibold mt-8 block">Core Expertise ➔ Premium Recreation</span>
+              </div>
+
+              {/* Card 3 */}
+              <div className="group p-8 bg-slate-900/40 border border-slate-900 rounded-xl hover:border-slate-800 transition-all duration-300 flex flex-col justify-between">
+                <div>
+                  <div className="aspect-video w-full overflow-hidden bg-slate-950 relative rounded-lg border border-slate-800/80 mb-6">
+                    <img src="/installation-project.jpg" alt="Industrial Installations" className="w-full h-full object-cover opacity-60 grayscale group-hover:grayscale-0 group-hover:opacity-100 transition-all duration-500" />
+                  </div>
+                  <h3 className="text-xl font-bold text-slate-100 mb-3">Structural Rigidity & Installations</h3>
+                  <p className="text-sm text-slate-400 leading-relaxed font-light">Bringing structural installation load dynamics to healthcare utility manufacturing. Every support frame and apparatus is built to industrial load capacities with zero architectural flex.</p>
+                </div>
+                <span className="text-[10px] tracking-wider text-amber-500/70 uppercase font-semibold mt-8 block">Core Expertise ➔ Aged Care Apparatus</span>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Footer & Contact Target Anchor */}
