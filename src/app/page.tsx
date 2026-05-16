@@ -9,7 +9,7 @@ export default function Home() {
           <img 
             src="/logo.svg" 
             alt="Sibko Limited Logo" 
-            className="h-10 w-auto object-contain" 
+            className="h-14 w-auto object-contain" 
           />
           <nav className="hidden sm:flex space-x-8 text-xs tracking-widest uppercase font-semibold text-slate-400">
             <a href="#divisions" className="hover:text-amber-500 transition-colors">Divisions</a>
