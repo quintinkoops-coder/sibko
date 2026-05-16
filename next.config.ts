@@ -1,8 +1,8 @@
 import type { NextConfig } from "next";
-import { initOpenNextCloudflareExtension } from "@opennextjs/cloudflare";
+import { initOpenNext } from "@opennextjs/cloudflare";
 
-// Explicitly initialize the Cloudflare edge binding extension helper
-initOpenNextCloudflareExtension();
+// Explicitly initialize the modern Cloudflare edge context extension
+initOpenNext();
 
 const nextConfig: NextConfig = {
   /* config options here */
