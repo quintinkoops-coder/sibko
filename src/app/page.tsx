@@ -3,13 +3,12 @@ export default function Home() {
     <div className="min-h-screen bg-slate-950 text-slate-100 font-sans selection:bg-amber-500/30 selection:text-amber-200">
       
       {/* Header / Navigation */}
-      {/* Header / Navigation */}
       <header className="border-b border-slate-900 bg-slate-950/80 backdrop-blur sticky top-0 z-50">
-        <div className="max-w-6xl mx-auto px-6 py-5 flex justify-between items-center">
+        <div className="max-w-6xl mx-auto px-6 h-20 flex justify-between items-center">
           <img 
             src="/logo.svg" 
             alt="Sibko Limited Logo" 
-            className="h-14 w-auto object-contain" 
+            className="h-10 w-auto object-contain" 
           />
           <nav className="hidden sm:flex space-x-8 text-xs tracking-widest uppercase font-semibold text-slate-400">
             <a href="#divisions" className="hover:text-amber-500 transition-colors">Divisions</a>
