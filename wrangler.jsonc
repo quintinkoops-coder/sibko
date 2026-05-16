@@ -13,7 +13,12 @@
 		"directory": ".open-next/assets"
 	},
 	"observability": {
-		"enabled": true
+    "enabled": true,
+    "head_sampling_rate": 1,
+    "logs": {
+      "enabled": true,
+      "invocation_logs": true
+    }
 	},
 	"upload_source_maps": true
 }
