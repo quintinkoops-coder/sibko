@@ -1,5 +1,4 @@
 import React from 'react';
-import { getRequestContext } from '@cloudflare/next-on-pages';
 
 export const runtime = 'edge';
 
@@ -16,9 +15,12 @@ export default async function CommissionPage() {
     const budget = formData.get('budget');
 
     try {
-      // Connects to your live "DB" binding asset
-      const { env } = getRequestContext();
-      const db = env.DB;
+      // Access your database connection directly from the global environment context
+      const db = (process.env as any).DB;
+
+      if (!db) {
+        throw new Error("Database binding 'DB' not detected in process.env");
+      }
 
       // Safely insert rows into your Cloudflare D1 table
       await db.prepare(
