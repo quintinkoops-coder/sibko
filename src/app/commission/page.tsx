@@ -15,7 +15,7 @@ export default async function CommissionPage() {
           </p>
         </div>
 
-        {/* Submitting securely to our custom API route via POST */}
+        {/* This points directly to your brand new working API route */}
         <form action="/api/submit-inquiry" method="POST" className="space-y-6">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             <div>
