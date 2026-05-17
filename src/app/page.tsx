@@ -86,7 +86,8 @@ export default function Home() {
             <div className="bg-slate-900/30 border border-slate-900 rounded-xl p-6 hover:border-slate-800/80 transition-all group">
               <div className="aspect-[16/10] w-full overflow-hidden bg-slate-950 relative rounded-lg border border-slate-900 mb-6">
                 <img 
-                  src="/aged-care-blueprint.png"
+                  src="https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?auto=format&fit=crop&w=600&q=80" 
+                  alt="Sibko Abstract Geometric Tool Mechanism Schematic" 
                   className="w-full h-full object-cover opacity-80 group-hover:opacity-100 group-hover:scale-102 transition-all duration-500" 
                 />
               </div>
