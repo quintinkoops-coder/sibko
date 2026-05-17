@@ -36,7 +36,7 @@ export default function CaseStudies() {
             Engineering Case Studies
           </h1>
           <p className="text-slate-400 font-light text-base md:text-lg max-w-3xl mt-4 leading-relaxed">
-            Deep-dive technical reviews detailing how Sibko transforms complex industrial constraints into premium consumer hardware, custom tooling pipelines, and market-ready innovations.
+            Deep-dive technical reviews detailing how SIBKO Limited transforms complex industrial constraints into premium consumer hardware, custom tooling pipelines, and market-ready innovations.
           </p>
         </div>
 
