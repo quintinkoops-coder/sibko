@@ -36,7 +36,7 @@ export default function Home() {
             Designing the Future of Premium Consumer Products
           </h1>
           <p className="text-slate-400 font-light text-base md:text-lg max-w-2xl mx-auto mt-6 leading-relaxed">
-            Sibko Limited is an elite product development and manufacturing umbrella company. We engineer ultra-premium consumer assets, combining advanced ergonomics with world-class production integrity.
+            SIBKO Limited is an elite product development and manufacturing umbrella company. We engineer ultra-premium consumer assets, combining advanced ergonomics with world-class production integrity.
           </p>
           <div className="mt-10 flex flex-col sm:flex-row gap-4 justify-center items-center">
             <a href="#divisions" className="w-full sm:w-auto text-xs font-bold tracking-widest text-slate-950 bg-amber-500 hover:bg-amber-400 px-8 py-4 rounded-lg transition-all shadow-lg shadow-amber-500/10">
