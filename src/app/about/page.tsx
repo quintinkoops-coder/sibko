@@ -62,7 +62,7 @@ export default function AboutUs() {
           {/* Image / Visual Anchor */}
           <div className="aspect-square md:aspect-auto w-full h-full overflow-hidden bg-slate-950 relative rounded-xl border border-slate-900 group">
             <img 
-              src="https://images.unsplash.com/photo-1565439390135-c423b497e70d?auto=format&fit=crop&w=800&q=80" 
+              src="/aged-care-blueprint.jpg" 
               alt="Industrial Engineering Blueprint" 
               className="w-full h-full object-cover opacity-50 grayscale group-hover:grayscale-0 group-hover:opacity-80 transition-all duration-700"
             />
