@@ -84,14 +84,17 @@ export default function Home() {
 
             {/* Division 3 - Aged Care */}
             <div className="bg-slate-900/30 border border-slate-900 rounded-xl p-6 hover:border-slate-800/80 transition-all group">
-              <div className="aspect-[16/10] w-full overflow-hidden bg-slate-950 relative rounded-lg border border-slate-900 mb-6 flex items-center justify-center text-4xl bg-slate-950/40">
-                🏥
+              <div className="aspect-[16/10] w-full overflow-hidden bg-slate-950 relative rounded-lg border border-slate-900 mb-6">
+                <img 
+                  src="https://images.unsplash.com/photo-1576765608535-5f04d1e3f289?auto=format&fit=crop&w=600&q=80" 
+                  alt="Sibko Premium Assisted Living Apparatus" 
+                  className="w-full h-full object-cover opacity-80 group-hover:opacity-100 group-hover:scale-102 transition-all duration-500" 
+                />
               </div>
               <h3 className="text-xl font-bold text-slate-200 mb-3 group-hover:text-amber-500 transition-colors">Aged Care & Assisted Living</h3>
               <p className="text-sm text-slate-400 leading-relaxed font-light mb-6">Developing empathetic, heavy-duty utility apparatus tailored explicitly for upscale retirement developments. Merging top-tier industrial utility with graceful interior integration.</p>
               <span className="text-[10px] font-mono tracking-widest text-slate-500 uppercase block border-t border-slate-900 pt-4">ERGONOMIC ENGINEERING</span>
             </div>
-          </div>
         </section>
         
         {/* Corporate Capabilities Brief */}
