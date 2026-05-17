@@ -15,12 +15,12 @@ export default function Home() {
             <img src="/logo.svg" alt="Sibko Limited Logo" className="h-7 w-auto" />
             <span className="font-mono tracking-wider text-xs text-slate-400 font-bold hidden sm:inline">CORPORATION</span>
           </div>
-          <nav className="flex gap-8 text-xs font-semibold tracking-widest text-slate-400">
-            <a href="#divisions" className="hover:text-amber-500 transition-colors">DIVISIONS</a>
-            <a href="#capabilities" className="hover:text-amber-500 transition-colors">CAPABILITIES</a>
-            <a href="#contact" className="hover:text-amber-500 transition-colors bg-slate-900 border border-slate-800 px-4 py-2 rounded-lg -mt-2 hover:border-amber-500/30 text-slate-300">CONTACT CORPORATE</a>
-          </nav>
-        </div>
+            <nav className="flex gap-8 text-xs font-semibold tracking-widest text-slate-400">
+              <a href="#divisions" className="hover:text-amber-500 transition-colors">DIVISIONS</a>
+              <a href="#capabilities" className="hover:text-amber-500 transition-colors">CAPABILITIES</a>
+              <a href="/commission" className="w-full sm:w-auto text-xs font-bold tracking-widest text-slate-300 bg-slate-900/60 hover:bg-slate-900 border border-slate-800 hover:border-slate-700 px-8 py-4 rounded-lg transition-all">
+            </nav>
+          </div>
       </header>
 
       <main>
@@ -40,7 +40,7 @@ export default function Home() {
             <a href="#divisions" className="w-full sm:w-auto text-xs font-bold tracking-widest text-slate-950 bg-amber-500 hover:bg-amber-400 px-8 py-4 rounded-lg transition-all shadow-lg shadow-amber-500/10">
               EXPLORE PORTFOLIO
             </a>
-            <a href="#contact" className="w-full sm:w-auto text-xs font-bold tracking-widest text-slate-300 bg-slate-900/60 hover:bg-slate-900 border border-slate-800 hover:border-slate-700 px-8 py-4 rounded-lg transition-all">
+            <a href="/commission" className="w-full sm:w-auto text-xs font-bold tracking-widest text-slate-300 bg-slate-900/60 hover:bg-slate-900 border border-slate-800 hover:border-slate-700 px-8 py-4 rounded-lg transition-all">
               SUBMIT COMMISSION INQUIRY
             </a>
           </div>
@@ -194,57 +194,6 @@ export default function Home() {
             </div>
           </div>
         </section>
-
-        {/* Contact Form Infrastructure */}
-        <section id="contact" className="max-w-4xl mx-auto px-6 py-24 text-center">
-          <div className="mb-12">
-            <span className="text-xs uppercase tracking-widest text-amber-500 font-bold block">ENGAGEMENT BRIEF</span>
-            <h2 className="text-3xl font-bold tracking-tight text-slate-100 mt-1">Submit Commission Inquiry</h2>
-            <p className="text-slate-400 font-light text-sm mt-3 max-w-lg mx-auto">
-              Initiate a structural design or high-volume production request. Our corporate response desk will evaluate your requirements.
-            </p>
-          </div>
-
-          <form action="/api/submit-inquiry" method="POST" className="bg-slate-900/40 border border-slate-900 rounded-2xl p-8 md:p-10 text-left space-y-6 backdrop-blur-sm max-w-xl mx-auto">
-            <div>
-              <label className="block text-[11px] font-mono uppercase tracking-wider text-slate-400 mb-2">Corporate Entity / Contact Name</label>
-              <input required type="text" name="name" placeholder="e.g. Alpha Recreation Ltd" className="w-full bg-slate-950 border border-slate-800/80 rounded-lg px-4 py-3 text-sm text-slate-200 placeholder-slate-600 focus:outline-none focus:border-amber-500/40 transition-colors" />
-            </div>
-
-            <div>
-              <label className="block text-[11px] font-mono uppercase tracking-wider text-slate-400 mb-2">Secure Email Address</label>
-              <input required type="email" name="email" placeholder="communications@entity.com" className="w-full bg-slate-950 border border-slate-800/80 rounded-lg px-4 py-3 text-sm text-slate-200 placeholder-slate-600 focus:outline-none focus:border-amber-500/40 transition-colors" />
-            </div>
-
-            <div>
-              <label className="block text-[11px] font-mono uppercase tracking-wider text-slate-400 mb-2">Target Division Assignment</label>
-              <select name="division" className="w-full bg-slate-950 border border-slate-800/80 rounded-lg px-4 py-3 text-sm text-slate-300 focus:outline-none focus:border-amber-500/40 transition-colors">
-                <option value="recreation">Premium Recreation (Motorized Assets)</option>
-                <option value="hydration">Advanced Hydration Systems (Thermal Hardware)</option>
-                <option value="agedcare">Aged Care & Assisted Living (Utility Apparatus)</option>
-              </select>
-            </div>
-
-            <div>
-              <label className="block text-[11px] font-mono uppercase tracking-wider text-slate-400 mb-2">Project Specifications Summary</label>
-              <textarea required name="specifications" rows={4} placeholder="Detail required raw materials compliance, initial order quantities, or engineering blueprints description..." className="w-full bg-slate-950 border border-slate-800/80 rounded-lg px-4 py-3 text-sm text-slate-200 placeholder-slate-600 focus:outline-none focus:border-amber-500/40 transition-colors resize-none" />
-            </div>
-
-            <div>
-              <label className="block text-[11px] font-mono uppercase tracking-wider text-slate-400 mb-2">Estimated Capital Budget Allocation</label>
-              <select name="budget" className="w-full bg-slate-950 border border-slate-800/80 rounded-lg px-4 py-3 text-sm text-slate-300 focus:outline-none focus:border-amber-500/40 transition-colors">
-                <option value="tier-1">Tier-1 Scaling Strategy (&lt; $50k)</option>
-                <option value="tier-2">Tier-2 Operational Deployment ($50k - $250k)</option>
-                <option value="tier-3">Tier-3 Enterprise Enterprise Infrastructure ($250k+)</option>
-              </select>
-            </div>
-
-            <button type="submit" className="w-full bg-slate-100 hover:bg-white text-slate-950 font-bold text-xs tracking-widest uppercase py-4 rounded-lg transition-colors mt-4">
-              TRANSMIT SPECIFICATIONS
-            </button>
-          </form>
-        </section>
-      </main>
 
       {/* Corporate Footer */}
       <footer className="border-t border-slate-900 bg-slate-950/40 py-12 px-6 text-center text-xs text-slate-500 font-light">
