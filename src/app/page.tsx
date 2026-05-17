@@ -161,7 +161,7 @@ export default function Home() {
                 <div>
                   <div className="aspect-video w-full overflow-hidden bg-slate-950 relative rounded-lg border border-slate-800/80 mb-6">
                     <img 
-                      src="https://images.unsplash.com/photo-1486006920555-c77dce18193b?auto=format&fit=crop&w=600&q=80" 
+                      src="https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122?auto=format&fit=crop&w=600&q=80" 
                       alt="Precision Powertrain Rebuilds" 
                       className="w-full h-full object-cover opacity-40 grayscale group-hover:grayscale-0 group-hover:opacity-80 transition-all duration-500" 
                     />
