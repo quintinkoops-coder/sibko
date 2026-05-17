@@ -15,12 +15,12 @@ export default function Home() {
             <img src="/logo.svg" alt="Sibko Limited Logo" className="h-7 w-auto" />
             <span className="font-mono tracking-wider text-xs text-slate-400 font-bold hidden sm:inline">CORPORATION</span>
           </div>
-            <nav className="flex gap-8 text-xs font-semibold tracking-widest text-slate-400">
-              <a href="#divisions" className="hover:text-amber-500 transition-colors">DIVISIONS</a>
-              <a href="#capabilities" className="hover:text-amber-500 transition-colors">CAPABILITIES</a>
-              <a href="/commission" className="w-full sm:w-auto text-xs font-bold tracking-widest text-slate-300 bg-slate-900/60 hover:bg-slate-900 border border-slate-800 hover:border-slate-700 px-8 py-4 rounded-lg transition-all">
-            </nav>
-          </div>
+          <nav className="flex gap-8 text-xs font-semibold tracking-widest text-slate-400">
+            <a href="#divisions" className="hover:text-amber-500 transition-colors">DIVISIONS</a>
+            <a href="#capabilities" className="hover:text-amber-500 transition-colors">CAPABILITIES</a>
+            <a href="/commission" className="hover:text-amber-500 transition-colors bg-slate-900 border border-slate-800 px-4 py-2 rounded-lg -mt-2 hover:border-amber-500/30 text-slate-300">CONTACT CORPORATE</a>
+          </nav>
+        </div>
       </header>
 
       <main>
@@ -161,7 +161,7 @@ export default function Home() {
                 <div>
                   <div className="aspect-video w-full overflow-hidden bg-slate-950 relative rounded-lg border border-slate-800/80 mb-6">
                     <img 
-                      src="https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122?auto=format&fit=crop&w=600&q=80" 
+                      src="https://images.unsplash.com/photo-1537462715879-360eeb61a0bc?auto=format&fit=crop&w=600&q=80" 
                       alt="Precision Powertrain Rebuilds" 
                       className="w-full h-full object-cover opacity-40 grayscale group-hover:grayscale-0 group-hover:opacity-80 transition-all duration-500" 
                     />
@@ -194,6 +194,7 @@ export default function Home() {
             </div>
           </div>
         </section>
+      </main>
 
       {/* Corporate Footer */}
       <footer className="border-t border-slate-900 bg-slate-950/40 py-12 px-6 text-center text-xs text-slate-500 font-light">
