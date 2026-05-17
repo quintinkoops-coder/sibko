@@ -8,16 +8,18 @@ export default function Home() {
       <div className="absolute top-0 left-1/4 w-96 h-96 bg-amber-500/10 rounded-full blur-[120px] pointer-events-none" />
       <div className="absolute top-[800px] right-1/4 w-[400px] h-[400px] bg-blue-500/5 rounded-full blur-[150px] pointer-events-none" />
 
-      {/* Navigation Header */}
+     {/* Navigation Header */}
       <header className="border-b border-slate-900/80 backdrop-blur-md bg-slate-950/70 sticky top-0 z-50 px-6 py-4">
         <div className="max-w-6xl mx-auto flex justify-between items-center">
           <div className="flex items-center gap-3">
             <img src="/logo.svg" alt="Sibko Limited Logo" className="h-7 w-auto" />
-            <span className="font-mono tracking-wider text-xs text-slate-400 font-bold hidden sm:inline">CORPORATION</span>
+            <span className="font-mono tracking-wider text-xs text-slate-400 font-bold hidden sm:inline"></span>
           </div>
-          <nav className="flex gap-8 text-xs font-semibold tracking-widest text-slate-400">
+          <nav className="flex gap-6 md:gap-8 text-xs font-semibold tracking-widest text-slate-400 items-center">
             <a href="#divisions" className="hover:text-amber-500 transition-colors">DIVISIONS</a>
             <a href="#capabilities" className="hover:text-amber-500 transition-colors">CAPABILITIES</a>
+            <a href="/case-studies" className="hover:text-amber-500 transition-colors">CASE STUDIES</a>
+            <a href="/about" className="hover:text-amber-500 transition-colors">ABOUT US</a>
             <a href="/commission" className="hover:text-amber-500 transition-colors bg-slate-900 border border-slate-800 px-4 py-2 rounded-lg -mt-2 hover:border-amber-500/30 text-slate-300">CONTACT CORPORATE</a>
           </nav>
         </div>
