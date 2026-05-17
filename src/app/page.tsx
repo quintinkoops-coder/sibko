@@ -82,7 +82,7 @@ export default function Home() {
               <span className="text-[10px] font-mono tracking-widest text-slate-500 uppercase block border-t border-slate-900 pt-4">MATERIAL INNOVATION</span>
             </div>
 
-            {/* Division 3 - Aged Care */}
+            {/* Division 3 - Aged Care & Assisted Living */}
             <div className="bg-slate-900/30 border border-slate-900 rounded-xl p-6 hover:border-slate-800/80 transition-all group">
               <div className="aspect-[16/10] w-full overflow-hidden bg-slate-950 relative rounded-lg border border-slate-900 mb-6">
                 <img 
@@ -95,8 +95,9 @@ export default function Home() {
               <p className="text-sm text-slate-400 leading-relaxed font-light mb-6">Developing empathetic, heavy-duty utility apparatus tailored explicitly for upscale retirement developments. Merging top-tier industrial utility with graceful interior integration.</p>
               <span className="text-[10px] font-mono tracking-widest text-slate-500 uppercase block border-t border-slate-900 pt-4">ERGONOMIC ENGINEERING</span>
             </div>
+          </div>
         </section>
-        
+
         {/* Corporate Capabilities Brief */}
         <section id="capabilities" className="bg-slate-900/20 border-t border-slate-900 py-24">
           <div className="max-w-6xl mx-auto px-6 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
