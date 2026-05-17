@@ -33,10 +33,10 @@ export default function AboutUs() {
           </a>
           <span className="text-xs uppercase tracking-widest text-slate-500 font-bold block">CORPORATE OVERVIEW</span>
           <h1 className="text-4xl md:text-5xl font-extrabold tracking-tight text-slate-100 mt-2">
-            About Sibko Corporation
+            About SIBKO Limited
           </h1>
           <p className="text-slate-400 font-light text-base md:text-lg max-w-3xl mt-4 leading-relaxed">
-            We are an elite product development and manufacturing consortium. Sibko bridges the gap between highly sophisticated industrial design and physical production realities for the premium consumer market.
+            We are an elite product development and manufacturing consortium. SIBKO Limited bridges the gap between highly sophisticated industrial design and physical production realities for the premium consumer market.
           </p>
         </div>
 
@@ -47,7 +47,7 @@ export default function AboutUs() {
             <div className="bg-slate-900/30 border border-slate-900 rounded-xl p-8 hover:border-slate-800 transition-colors">
               <h3 className="text-xl font-bold text-slate-200 mb-3">Our Industrial Heritage</h3>
               <p className="text-sm text-slate-400 leading-relaxed font-light">
-                Forged in high-security industrial sectors and advanced machinery overrides, Sibko's foundation is built on uncompromising durability. We bring a zero-tolerance discipline to consumer products, engineering everyday items with the same rigor applied to heavy-duty fluid processing pipelines and aerospace componentry.
+                Forged in high-security industrial sectors and advanced machinery overrides, SIBKO Limited's foundation is built on uncompromising durability. We bring a zero-tolerance discipline to consumer products, engineering everyday items with the same rigor applied to heavy-duty fluid processing pipelines and aerospace componentry.
               </p>
             </div>
             
