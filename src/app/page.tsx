@@ -1,6 +1,19 @@
 import Image from "next/image";
 
 export default function Home() {
+  const IS_COMING_SOON = true; // Set to false when you are ready to launch!
+
+  if (IS_COMING_SOON) {
+    return (
+      <div className="min-h-screen bg-slate-950 text-slate-100 flex flex-col items-center justify-center p-6 text-center">
+        <h1 className="text-4xl font-extrabold tracking-tight mb-4">SIBKO</h1>
+        <p className="text-slate-400 max-w-md">
+          We are building something new. Our official website is coming soon.
+        </p>
+      </div>
+    );
+  }
+  
   return (
     <div className="min-h-screen bg-slate-950 text-slate-100 font-sans selection:bg-amber-500/30 selection:text-amber-200">
       
