@@ -26,5 +26,16 @@
       "database_name": "sibko-db",
       "database_id": "70adc112-66c1-41a1-8441-b766cdc0ef62"
     }
-  ]
+  ],
+  "env": {
+    "production": {
+      "d1_databases": [
+        {
+          "binding": "DB",
+          "database_name": "sibko-db",
+          "database_id": "071c44c8-e18c-4d9a-b7b7-45c730a5ee85"
+        }
+      ]
+    }
+  }
 }
