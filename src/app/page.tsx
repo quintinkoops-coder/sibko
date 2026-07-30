@@ -12,7 +12,7 @@ export default async function Home() {
       <div className="min-h-screen bg-neutral-950 text-neutral-100 flex flex-col items-center justify-center p-6 text-center">
         <h1 className="text-4xl font-extrabold tracking-tight mb-4">SIBKO</h1>
         <p className="text-slate-400 max-w-md">
-          We are building something new. Our official website is coming soon.
+          We are building something new.<br />Our official website is coming soon.
         </p>
       </div>
     );
