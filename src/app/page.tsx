@@ -1,9 +1,13 @@
 import Image from "next/image";
+import { headers } from 'next/headers';
 
-export default function Home() {
-  const IS_COMING_SOON = true; // Set to false when you are ready to launch!
+export default async function Home() {
+  const headersList = await headers();
+  const host = headersList.get('host') || '';
+  const IS_COMING_SOON = host.includes('sibko.co.nz'); // Coming soon on production, full site on preview
 
   if (IS_COMING_SOON) {
+
     return (
       <div className="min-h-screen bg-neutral-950 text-neutral-100 flex flex-col items-center justify-center p-6 text-center">
         <h1 className="text-4xl font-extrabold tracking-tight mb-4">SIBKO</h1>
