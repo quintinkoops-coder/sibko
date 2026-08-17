@@ -6,18 +6,28 @@ export default async function Home() {
   const host = headersList.get('host') || '';
   const IS_COMING_SOON = host.includes('sibko.co.nz'); // Coming soon on production, full site on preview
 
-  if (IS_COMING_SOON) {
+if (IS_COMING_SOON) {
+  return (
+    <div className="min-h-screen bg-neutral-50 text-neutral-900 flex flex-col items-center justify-center p-6 text-center">
+      <h1 className="text-4xl font-extrabold tracking-tight mb-4">
+        SIBKO
+      </h1>
 
-    return (
-      <div className="min-h-screen bg-neutral-50 text-neutral-900 flex flex-col items-center justify-center p-6 text-center">
-        <h1 className="text-4xl font-extrabold tracking-tight mb-4">SIBKO</h1>
-        <p className="text-neutral-600 max-w-md">
-          We are building something new.<br />Our official website is coming soon.
-        </p>
-      </div>
-    );
-  }
-  
+      <p className="text-neutral-600 max-w-md">
+        We are building something new.
+        <br />
+        Our official website is coming soon.
+      </p>
+
+<a
+      href="/composter"
+      className="mt-8 inline-flex items-center justify-center rounded-lg bg-amber-500 px-7 py-3.5 text-xs font-bold tracking-widest text-neutral-950 shadow-lg shadow-amber-500/20 transition-all hover:bg-amber-400 hover:-translate-y-0.5"
+    >
+      VIEW COMPOSTER
+    </a>
+  </div>
+  );
+}
   return (
     <div className="min-h-screen bg-neutral-50 text-neutral-900 font-sans selection:bg-amber-500/30 selection:text-amber-800">
       
