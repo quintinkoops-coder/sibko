@@ -7,6 +7,8 @@ export default async function Home() {
   const IS_COMING_SOON = host.includes('sibko.co.nz'); // Coming soon on production, full site on preview
 
 if (IS_COMING_SOON) {
+  const SHOW_COMPOSTER_BUTTON = false;
+  
   return (
     <div className="min-h-screen bg-neutral-50 text-neutral-900 flex flex-col items-center justify-center p-6 text-center">
       <h1 className="text-4xl font-extrabold tracking-tight mb-4">
@@ -19,6 +21,7 @@ if (IS_COMING_SOON) {
         Our official website is coming soon.
       </p>
 
+      {SHOW_COMPOSTER_BUTTON && (
 <a
       href="/composter"
       className="mt-8 inline-flex items-center justify-center rounded-lg bg-amber-500 px-7 py-3.5 text-xs font-bold tracking-widest text-neutral-950 shadow-lg shadow-amber-500/20 transition-all hover:bg-amber-400 hover:-translate-y-0.5"
